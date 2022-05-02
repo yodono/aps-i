@@ -1,0 +1,71 @@
+.nav_list {
+    flex-direction: column;
+    display: flex;
+}
+
+navBar a {
+    text-decoration: none;
+    color: unset;
+    display: flex;
+}
+
+.icon-wrapper {
+    height: 0.5rem;
+    width: 1.6rem;
+    display: flex;
+    justify-content: center;
+}
+
+.sidebar {
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 240px;
+    background: var(--dark-grey);
+    padding: 6px 14px;
+}
+
+.sidebar .logo_content .logo {
+    color: #fff;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+}
+
+.logo_content .logo i {
+    font-size: 28px;
+    margin-right: 5px;
+}
+
+.logo_content .logo .logo_name {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.sidebar #btn{
+    position: absolute;
+    color: #fff;
+    left: 90%;
+    top: 6px;
+    font-size: 20px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    transform: translate(-50%);
+}
+
+.sidebar ul{
+    margin-top: 20px;
+
+}
+
+.sidebar ul li {
+    height: 50px;
+    width: 100%;
+    position: relative;
+    margin: 0 5px;
+    color: white;
+    list-style: none
+}
