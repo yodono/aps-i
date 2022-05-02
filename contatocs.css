@@ -1,0 +1,32 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#seila {
+    width:100%;
+    
+}
+.seila2 {
+    width:100%;
+}
+input {
+    width:100%;
+}
+#seila3 {
+    display:flex;
+    gap:20%;
+}
+#botao{
+    width: 15%;
+    background-color: red;
+    border: none;
+    line-height: 2em;
+    color: white;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+#botao:hover {
+    cursor: pointer;
+}
+#botao:active {
+    opacity: 0.7;
+}
