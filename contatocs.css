@@ -1,15 +1,21 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
 }
 #seila {
-    width:100%;
+    margin-top: 10%;
+    width: 50%;
+    align-items: center;
+    display: flex-direction;
+    justify-content: center;
+    margin-left: 25%;
     
 }
 .seila2 {
     width:100%;
 }
-input {
+input, textarea {
     width:100%;
+    text-indent: 10px;
 }
 #seila3 {
     display:flex;
@@ -17,16 +23,20 @@ input {
 }
 #botao{
     width: 15%;
-    background-color: red;
+    background-color: var(--main-green);
     border: none;
     line-height: 2em;
-    color: white;
+    color: var(--dark-grey);
     font-weight: bold;
-    font-family: 'Courier New', Courier, monospace;
+    
 }
 #botao:hover {
     cursor: pointer;
 }
 #botao:active {
     opacity: 0.7;
+}
+label::after {
+    content: "*";
+    color:red !important;
 }
