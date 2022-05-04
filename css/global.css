@@ -15,7 +15,7 @@ body {
     position: relative;
     min-height: 100vh;
     width: 100%;
-    overflow: hidden;
+    overflow: hidden; 
 }
 
 .content {
@@ -25,9 +25,4 @@ body {
 
 footer {
     flex-shrink: 0;
-}
-
-navBar {
-    position: fixed;
-    height: 100%;
 }
