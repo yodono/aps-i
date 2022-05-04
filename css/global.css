@@ -12,11 +12,97 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
+    background-color: var(--deep-gray);
+}
+
+header{
+   padding-bottom: 25px;
 }
 
 .content {
     flex: 1 0 auto;
 }
+
+h1 {
+    text-align: center;
+    padding-top: 25px;
+}
+
+        
+          /*Menu experimental*/
+
+.topnav {
+    overflow: hidden;
+    background-color: var(--main-green);
+    
+}
+
+.topnav a{
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: var(--river-green);
+}           /*Fim menu experimental*/
+
+
+        
+
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+          
+          
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+          
+          
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+          
+          
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+          
+          
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+          /* Layout responsivo, ao inves das colunas ficarem do lado da outra elas ficam alinhadas verticalmente, isso quando numa resolução menor que 400px*/
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+          
+          /* Layout responsivo, ao inves das colunas ficarem do lado da outra elas ficam alinhadas verticalmente, isso quando numa resolução menor que 400px*/
+@media screen and (max-width: 400px) {
+   .topnav a {
+      float: none;
+      width: 100%;
+  }
+}
+          
+
 
 footer {
     flex-shrink: 0;
