@@ -11,8 +11,13 @@ function renderNavBar(){
             <li>
                 <a href="/sobre.html">Sobre</a>
             </li>
-            <li>
+            <li class="dropdown">
                 <a href="#">Problemas</a>
+                <ul class="dropdown-content">
+                    <li>
+                        <a href="#">Minha Vida</a>
+                    </li>
+                </ul>
             </li>
             <li>
                 <a href="#">Alternativas</a>
