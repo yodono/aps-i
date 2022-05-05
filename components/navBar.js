@@ -1,4 +1,4 @@
-function rendernavBar(){
+function renderNavBar(){
     document.getElementById("navBar").innerHTML += /* html */` 
     <nav>   
         <div class="logo">
@@ -6,10 +6,10 @@ function rendernavBar(){
         </div>
         <ul class="nav_links">
             <li>
-                <a href="#">Home</a>
+                <a href="./">Home</a>
             </li>
             <li>
-                <a href="#">Sobre</a>
+                <a href="/sobre.html">Sobre</a>
             </li>
             <li>
                 <a href="#">Problemas</a>
@@ -27,4 +27,4 @@ function rendernavBar(){
     `
 };
 
-rendernavBar();
+renderNavBar();

@@ -7,7 +7,7 @@ nav{
 }
 
 .logo {
-    color: rgb(226, 226, 226);
+    color: var(--light-grey);
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 22px;
@@ -20,7 +20,7 @@ nav{
 }
 
 .nav_links a{
-    color: rgb(226, 226, 226);
+    color: var(--light-grey);
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: bold;
@@ -39,7 +39,7 @@ nav{
 .burger div{
     width: 25px;
     height: 2px;
-    background-color: rgb(226, 226, 226);
+    background-color: var(--light-grey);
     margin: 5px;
     transition: all 0.3s ease;
 }
@@ -100,4 +100,8 @@ nav{
 
 .toggle .line3{
     transform: rotate(45deg) translate(-5px,-6px);
+}
+
+.nav_links li:hover{
+    opacity: 0.5;
 }
