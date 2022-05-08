@@ -52,7 +52,7 @@ h1 {
 
 
         
-
+              /*Colunas*/
 .leftcolumn {   
   float: left;
   width: 75%;
@@ -104,8 +104,7 @@ h1 {
       width: 100%;
   }
 }
-          
-
+      /*Fim Colunas*/    
 
 footer {
     flex-shrink: 0;
