@@ -116,6 +116,14 @@ nav{
     display: none;
 }
 
+.dropdown-content li{
+    margin: 1em;
+}
+
+.dropdown-content li:hover{
+    opacity: 0.5;  
+}
+
 .dropdown:hover .dropdown-content {
     display: block;
     position: absolute;
