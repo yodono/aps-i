@@ -19,8 +19,6 @@
       <link rel="stylesheet" href="css/variables.css" />
       <link rel="stylesheet" href="css/footer.css" />
 
-      
-
 
   </head>
   <body>
@@ -45,37 +43,26 @@
 
                 <div class="slideshow-container">
 
-                  <div class="mySlides fade">
+                  <div class="meusSlides1">
                     <div class="numbertext">1 / 3</div>
-                    <img src="./assets/Amazonia-em-chamas.jpg" style="width:100%">
-                    <div class="text">Texto aleatório 1</div>
+                    <img src="./assets/queimada.jpg" style="width:100%">
                   </div>
-                  
-                  <div class="mySlides fade">
+                
+                  <div class="meusSlides1">
                     <div class="numbertext">2 / 3</div>
                     <img src="./assets/man-o-fire.jpg" style="width:100%">
-                    <div class="text">Texto aleatório 2</div>
                   </div>
-                  
-                  <div class="mySlides fade">
+                
+                  <div class="meusSlides1">
                     <div class="numbertext">3 / 3</div>
-                    <img src="img_mountains_wide.jpg" style="width:100%">
-                    <div class="text">Texto aleatório 3</div>
+                    <img src="./assets/pantanal.jpg" style="width:100%">
                   </div>
-                  
-                  <a class="prev" onclick="proSlide(-1)">❮</a>
-                  <a class="next" onclick="proSlide(1)">❯</a>
+                
+                  <a class="ant" onclick="proSlides(-1, 0)">&#10094;</a>
+                  <a class="pro" onclick="proSlides(1, 0)">&#10095;</a>
                   
                 </div>
-                <br>
-
-                <div style="text-align:center">
-                  <span class="dot" onclick="slideAtual(1)"></span> 
-                  <span class="dot" onclick="slideAtual(2)"></span> 
-                  <span class="dot" onclick="slideAtual(3)"></span> 
-                </div>
-              
-              
+                              
               <p>Alguma coisa</p>
               <p>Não a nada mais belo do que o canto dos pássaros, o canto da liberdade</p>
             </div>
@@ -83,7 +70,25 @@
             <div class="card">
               <h2>O Agronegócio</h2>
               <h5>O progresso destrutivo</h5>
-              <div class="fakeimg" style="height:200px;">Aqui podemos colocar um carrossel de imagens relacionadas ao Box</div>
+              <div class="slideshow-container">
+                <div class="meusSlides2">
+                  <div class="numbertext">1 / 3</div>
+                  <img src="./assets/agronegocio.jpg" style="width:100%">
+                </div>
+              
+                <div class="meusSlides2">
+                  <div class="numbertext">2 / 3</div>
+                  <img src="img_band_la.jpg" style="width:100%">
+                </div>
+              
+                <div class="meusSlides2">
+                  <div class="numbertext">3 / 3</div>
+                  <img src="img_band_ny.jpg" style="width:100%">
+                </div>
+              
+                <a class="ant" onclick="proSlides(-1, 1)">&#10094;</a>
+                <a class="pro" onclick="proSlides(1, 1)">&#10095;</a>
+              </div>
               <p>Some text..</p>
               <p>A medida que progredimos mais evoluímos, a medida que evoluímos mais destruimos</p>
             </div>
