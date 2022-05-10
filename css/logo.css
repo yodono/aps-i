@@ -1,0 +1,42 @@
+#logo.tiny{
+    width: 2em;
+    height: 2em;
+}
+
+#logo.normal{
+    width: 3em;
+    height: 3em;
+}
+
+#logo.large{
+    width: 10em;
+    height: 10em;
+}
+
+/* primary theme */
+#logo.primary > svg > path {
+    stroke: var(--main-green);
+}
+
+/* secondary theme */
+#logo.secondary > svg > path {
+    stroke: var(--fire-red);
+}
+
+/* dark theme */
+#logo.dark > svg > path {
+    stroke: var(--dark-grey);
+}
+
+/* light theme */
+#logo.light > svg > path {
+    stroke: var(--light-grey);
+}
+
+#logo.light > svg > path#logo-letter {
+    fill: var(--light-grey);
+}
+
+#logo.light.duotone > svg > path#logo-letter {
+    fill: white;
+}
