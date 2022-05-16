@@ -1,5 +1,5 @@
 function renderFooter() {
-    document.getElementById("footer").innerHTML += `
+    document.getElementById("footer").innerHTML += /*html*/`
         <div>
             <strong>Social</strong>
             <ul>
@@ -12,18 +12,18 @@ function renderFooter() {
         <div>
             <strong>Problemas</strong>
             <ul>
-                <li><a href="problemas/amazonia.html">Amazônia</a></li>
-                <li><a href="problemas/hidreletricas.html">Hidrelétricas</a></li>
-                <li><a href="problemas/pecuaria.html">Pecuária</a></li>
+                <li><a href="amazonia.html">Amazônia</a></li>
+                <li><a href="hidreletricas.html">Hidrelétricas</a></li>
+                <li><a href="pecuaria.html">Pecuária</a></li>
             </ul>
         </div>
 
         <div>
             <strong>Alternativas</strong>
             <ul>
-                <li><a href="alternativas/eolica.html">Energia Eólica</a></li>
-                <li><a href="alternativas/solar.html">Energia Solar</a></li>
-                <li><a href="alternativas/maremotriz.html">Energia Maremotriz</a></li>
+                <li><a href="eolica.html">Energia Eólica</a></li>
+                <li><a href="solar.html">Energia Solar</a></li>
+                <li><a href="maremotriz.html">Energia Maremotriz</a></li>
             </ul>
         </div>
 
