@@ -1,5 +1,5 @@
 function renderNavBar(){
-    document.getElementById("navBar").innerHTML += /* html */` 
+    document.getElementById("navBar").innerHTML += /* html */`
     <nav>   
         <div class="logo">
             <h4>ToMAN</h4>
@@ -12,7 +12,10 @@ function renderNavBar(){
                 <a href="/sobre.html">Sobre</a>
             </li>
             <li class="dropdown">
-                <a href="#">Problemas</a>
+                <p>
+                    <a href="#">Problemas</a>
+                    <i class="fa-solid fa-caret-down"></i>
+                </p>
                 <ul class="dropdown-content">
                     <li>
                         <a href="#">Amazônia</a>
@@ -26,7 +29,10 @@ function renderNavBar(){
                 </ul>
             </li>
             <li class="dropdown">
-                <a href="#">Alternativas</a>
+                <p>
+                    <a href="#">Alternativas</a>
+                    <i class="fa-solid fa-caret-down"></i>
+                </p>
                 <ul class="dropdown-content">
                     <li>
                         <a href="#">Energia Eólica</a>
