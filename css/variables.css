@@ -10,5 +10,6 @@
 
     --light-grey: #CCCCCC;
     --dark-grey: #141414;
-    --dark-grey-alpha: #141414E6;
+    --dark-grey-alpha90: #141414E6;
+    --dark-grey-alpha50: #14141480;
 }

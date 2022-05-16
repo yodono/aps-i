@@ -63,7 +63,7 @@ nav{
         position: absolute;
         right: 0px;
         top: 8vh;
-        background-color: var(--dark-grey-alpha);
+        background-color: var(--dark-grey-alpha90);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -157,13 +157,21 @@ nav{
 }
 
 @media screen and (max-width: 768px) {
-    .dropdown:hover .dropdown-content {
+    .dropdown {
+        width: 100%;
+        background-color: var(--dark-grey-alpha50);
+    }
+    .dropdown-content {
+        display: block;
         position: relative;
         width: 100%;
         top: 0;
     }
-    .dropdown:hover .dropdown-content .nav_links li {
+    .dropdown-content .nav_links li {
         width: auto;
-        padding: 0 !important;
+        padding: 0;
+    }
+    .dropdown i.fa-solid{
+        display: none;
     }
 }
