@@ -13,35 +13,35 @@ function renderNavBar(){
             </li>
             <li class="dropdown">
                 <p>
-                    <a href="#">Problemas</a>
+                    <a>Problemas</a>
                     <i class="fa-solid fa-caret-down"></i>
                 </p>
                 <ul class="dropdown-content">
                     <li>
-                        <a href="#">Amazônia</a>
+                        <a href="/amazonia.html">Amazônia</a>
                     </li>
                     <li>
-                        <a href="#">Hidrelétrica</a>
+                        <a href="/hidreletricas.html">Hidrelétricas</a>
                     </li>
                     <li>
-                        <a href="#">Pecuária</a>
+                        <a href="/pecuaria.html">Pecuária</a>
                     </li>
                 </ul>
             </li>
             <li class="dropdown">
                 <p>
-                    <a href="#">Alternativas</a>
+                    <a>Alternativas</a>
                     <i class="fa-solid fa-caret-down"></i>
                 </p>
                 <ul class="dropdown-content">
                     <li>
-                        <a href="#">Energia Eólica</a>
+                        <a href="/eolica.html">Energia Eólica</a>
                     </li>
                     <li>
-                        <a href="#">Energia Solar</a>
+                        <a href="/solar.html">Energia Solar</a>
                     </li>
                     <li>
-                        <a href="#">Energia Maremotriz</a>
+                        <a href="/maremotriz.html">Energia Maremotriz</a>
                     </li>
                 </ul>
             </li>

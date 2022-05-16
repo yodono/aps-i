@@ -3,6 +3,7 @@ nav{
     justify-content: space-around;
     align-items: center;
     min-height: 10vh;
+    height: 100%;
     background-color: var(--dark-grey);
 }
 
@@ -15,10 +16,9 @@ nav{
 
 .nav_links{
     display: flex;
-    width: 40%;
     height: 100%;
     justify-content: space-around;
-    gap: 1em;
+    gap: 3em;
 }
 
 .nav_links i {
@@ -35,12 +35,11 @@ nav{
 
 .nav_links li{
     list-style: none;
-    width: 100%;
-    height: 100%;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .burger{
@@ -56,12 +55,6 @@ nav{
     transition: all 0.3s ease;
 }
 
-@media screen and (max-width: 1024px) {
-    .nav_links{
-        width: 50%;
-    }
-}
-
 @media screen and (max-width: 768px) {
     body {
         overflow-x: hidden;
@@ -69,7 +62,6 @@ nav{
     .nav_links {
         position: absolute;
         right: 0px;
-        height: 100%;
         top: 8vh;
         background-color: var(--dark-grey-alpha);
         display: flex;
@@ -81,8 +73,8 @@ nav{
         gap: 0;
         justify-content: flex-start;
     }
-    .nav_links li {
-        padding: 2em;
+    .nav_links a, p {
+        padding: 1.5em;
     }
     .burger{
         display: block;
@@ -116,7 +108,7 @@ nav{
     transform: rotate(45deg) translate(-5px,-6px);
 }
 
-.nav_links li:hover a{
+.nav_links li:hover a, .nav_links li:hover i{
     opacity: 0.5;
 }
 
@@ -136,10 +128,6 @@ nav{
     top: 100%;
 }
 
-.dropdown-content li{
-    padding: 1.5em;
-}
-
 .dropdown-content a {
     color: var(--dark-grey);
 }
@@ -152,8 +140,16 @@ nav{
     display: block;
 }
 
+.dropdown:hover .dropdown-content a:hover {
+    background-color: var(--dark-grey);
+    color: var(--light-grey);
+}
+
 .dropdown:hover .dropdown-content a {
     opacity: 1;
+    width: 100%;
+    height: 100%;
+    padding: 1.5em;
 }
 
 .dropdown:hover a {
@@ -161,14 +157,13 @@ nav{
 }
 
 @media screen and (max-width: 768px) {
-    .nav_links li {
-        line-height: 2em;
-    }
     .dropdown:hover .dropdown-content {
         position: relative;
         width: 100%;
+        top: 0;
     }
     .dropdown:hover .dropdown-content .nav_links li {
         width: auto;
+        padding: 0 !important;
     }
 }
