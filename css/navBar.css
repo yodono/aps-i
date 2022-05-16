@@ -17,6 +17,7 @@ nav{
     display: flex;
     width: 40%;
     justify-content: space-around;
+    gap: 1em;
 }
 
 .nav_links a{
@@ -29,6 +30,8 @@ nav{
 
 .nav_links li{
     list-style: none;
+    width: 100%;
+    text-align: center;
 }
 
 .burger{
@@ -59,16 +62,13 @@ nav{
         right: 0px;
         height: 92vh;
         top: 8vh;
-        background-color: var(--dark-grey);
+        background-color: var(--dark-grey-alpha);
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 50%;
+        width: 100%;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
-    }
-    .nav_links li a{
-        opacity: 0;
     }
     .burger{
         display: block;
@@ -117,7 +117,7 @@ nav{
 }
 
 .dropdown-content li{
-    margin: 1em;
+    padding: 1.5em;
 }
 
 .dropdown-content li:hover{
@@ -130,7 +130,6 @@ nav{
     background-color: var(--dark-grey);
     text-align: center;
     width: max-content;
-    padding: 1em;
 }
 
 .dropdown:hover .dropdown-content a {
@@ -139,4 +138,12 @@ nav{
 
 .dropdown:hover a {
     opacity: 1 !important;
+}
+
+@media screen and (max-width: 768px) {
+    .dropdown:hover .dropdown-content {
+        position: sticky;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
