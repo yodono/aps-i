@@ -1,5 +1,5 @@
 function renderFooter() {
-    document.getElementById("footer").innerHTML += /*html*/`
+    document.getElementById("footer").innerHTML += /* html */`
         <div>
             <strong>Social</strong>
             <ul>
