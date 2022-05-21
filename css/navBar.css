@@ -2,9 +2,16 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 10vh;
+    max-height: 10vh;
     height: 100%;
     background-color: var(--dark-grey);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav, nav * {
+    z-index: 999;
 }
 
 .logo {
@@ -76,6 +83,10 @@ nav{
     .nav_links a, p {
         padding: 1.5em;
     }
+    .nav_links li{
+        background-color: var(--dark-grey);
+        width: 100%;
+    }
     .burger{
         display: block;
     }
@@ -126,6 +137,11 @@ nav{
     text-align: center;
     width: max-content;
     top: 100%;
+}
+
+.dropdown-content li {
+    background-color: var(--light-grey);
+    color: var(--dark-grey);
 }
 
 .dropdown-content a {

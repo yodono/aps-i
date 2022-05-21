@@ -12,16 +12,166 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    position: relative;
-    min-height: 100vh;
-    width: 100%;
-    overflow: hidden; 
+    background-color: var(--deep-gray);
 }
 
 .content {
+    margin-top: 10vh;
     flex: 1 0 auto;
 }
+
+h1 {
+    text-align: center;
+    padding-top: 25px;
+}
+
+
+
+        
+              
+
+.leftcolumn {   
+  float: left;
+  width: 75%;
+  padding-left: 10px;
+  padding-bottom: 20px;
+}
+          
+          
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 15px;
+  padding-right: 10px;
+  padding-bottom: 15px;
+}
+
+      .card {
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
+      }
+            
+
+              
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+          /* Layout responsivo, ao inves das colunas ficarem do lado da outra elas ficam alinhadas verticalmente, isso quando numa resolução menor que 400px*/
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+          
+          /* Layout responsivo, ao inves das colunas ficarem do lado da outra elas ficam alinhadas verticalmente, isso quando numa resolução menor que 400px*/
+@media screen and (max-width: 400px) {
+   .topnav a {
+      float: none;
+      width: 100%;
+  }
+}
+      /*Fim Colunas*/    
 
 footer {
     flex-shrink: 0;
 }
+
+
+
+
+
+
+.meusSlides1, .meusSlides2 {display: none}
+img {vertical-align: left;}
+
+
+.slideshow-container {
+  padding-top: 10px;
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+.ant, .pro {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}/* Proximo e antes - Botões */
+
+
+.pro {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}/* Posiciona o botão Proximo na direita */
+
+
+.ant:hover, .pro:hover {
+  background-color: rgba(0,0,0,0.8);
+}/* quando o mouse em cima a tonalidade do botão muda e possui um pouco de visibilidade doq está atras*/
+
+
+.text {
+  color: var(--deep-gray);
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0,0,0,0.5);
+}/* Texto */
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 25px 15px;
+  position: absolute;
+  top: 0;
+}/* Indicador em fração */
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}/* Indicador em dot */  
+
+.active, .dot:hover { 
+  background-color: #717171;
+}/*hover do indicador*/
+
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}/* animção de saida */
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}/* diminui o tamanho do texto quanto menor a resolução */
+
