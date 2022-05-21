@@ -1,0 +1,42 @@
+body {
+    font-weight: bold;
+}
+#seila {
+    margin-top: 10%;
+    width: 50%;
+    align-items: center;
+    display: flex-direction;
+    justify-content: center;
+    margin-left: 25%;
+    
+}
+.seila2 {
+    width:100%;
+}
+input, textarea {
+    width:100%;
+    text-indent: 10px;
+}
+#seila3 {
+    display:flex;
+    gap:20%;
+}
+#botao{
+    width: 15%;
+    background-color: var(--main-green);
+    border: none;
+    line-height: 2em;
+    color: var(--dark-grey);
+    font-weight: bold;
+    
+}
+#botao:hover {
+    cursor: pointer;
+}
+#botao:active {
+    opacity: 0.7;
+}
+label::after {
+    content: "*";
+    color:red !important;
+}
