@@ -25,6 +25,7 @@ input, textarea {
     width: 15%;
     background-color: var(--main-green);
     border: none;
+    border-radius: 10px;
     line-height: 2em;
     color: var(--dark-grey);
     font-weight: bold;
