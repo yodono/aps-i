@@ -1,0 +1,69 @@
+body {
+    font-weight: bold;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.content > h1 {
+    margin-bottom: 1em;
+    text-align: right;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1em;
+}
+
+input, textarea {
+    width: 100%;
+    text-indent: 10px;
+    padding: 1em;
+    border: none;
+}
+
+input::placeholder, textarea::placeholder {
+    font-size: 1.15em;
+}
+
+textarea {
+    resize: none
+}
+
+.botao{
+    background-color: var(--main-green);
+    border: none;
+    border-radius: 10px;
+    color: var(--dark-grey);
+    font-weight: bold;
+    padding: 1em 2em;
+    margin-top: 1em;
+}
+
+.botao:hover {
+    cursor: pointer;
+}
+
+.botao:active {
+    opacity: 0.7;
+}
+
+.botao.limpar {
+    background-color: var(--fire-red);
+}
+
+label::after {
+    content: " *";
+    color:red;
+}
+
+.label-contato {
+    display: block;
+    padding-bottom: 0.25em;
+}
