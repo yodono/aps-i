@@ -25,10 +25,9 @@ h1 {
     padding-top: 25px;
 }
 
-
-
-        
-              
+a {
+  text-decoration: none;
+}
 
 .leftcolumn {   
   float: left;
@@ -36,7 +35,6 @@ h1 {
   padding-left: 10px;
   padding-bottom: 20px;
 }
-          
           
 .rightcolumn {
   float: left;
@@ -46,21 +44,19 @@ h1 {
   padding-bottom: 15px;
 }
 
-      .card {
-        background-color: white;
-        padding: 20px;
-        margin-top: 20px;
-      }
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 1em;
+}
             
-
-              
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-          /* Layout responsivo, ao inves das colunas ficarem do lado da outra elas ficam alinhadas verticalmente, isso quando numa resolução menor que 400px*/
+/* Layout responsivo, ao inves das colunas ficarem do lado da outra elas ficam alinhadas verticalmente, isso quando numa resolução menor que 400px*/
 @media screen and (max-width: 800px) {
   .leftcolumn, .rightcolumn {   
     width: 100%;
@@ -68,27 +64,22 @@ h1 {
   }
 }
           
-          /* Layout responsivo, ao inves das colunas ficarem do lado da outra elas ficam alinhadas verticalmente, isso quando numa resolução menor que 400px*/
+/* Layout responsivo, ao inves das colunas ficarem do lado da outra elas ficam alinhadas verticalmente, isso quando numa resolução menor que 400px*/
 @media screen and (max-width: 400px) {
    .topnav a {
       float: none;
       width: 100%;
   }
 }
-      /*Fim Colunas*/    
+/*Fim Colunas*/    
 
 footer {
     flex-shrink: 0;
 }
 
-
-
-
-
-
-.meusSlides1, .meusSlides2 {display: none}
-img {vertical-align: left;}
-
+.slide {
+  display: none
+}
 
 .slideshow-container {
   padding-top: 10px;
@@ -97,6 +88,9 @@ img {vertical-align: left;}
   margin: auto;
 }
 
+.slideshow-container img{
+  height: 25em;
+}
 
 .ant, .pro {
   cursor: pointer;
@@ -113,17 +107,14 @@ img {vertical-align: left;}
   user-select: none;
 }/* Proximo e antes - Botões */
 
-
 .pro {
   right: 0;
   border-radius: 3px 0 0 3px;
 }/* Posiciona o botão Proximo na direita */
 
-
 .ant:hover, .pro:hover {
   background-color: rgba(0,0,0,0.8);
 }/* quando o mouse em cima a tonalidade do botão muda e possui um pouco de visibilidade doq está atras*/
-
 
 .text {
   color: var(--deep-gray);
@@ -144,7 +135,6 @@ img {vertical-align: left;}
   top: 0;
 }/* Indicador em fração */
 
-
 .dot {
   cursor: pointer;
   height: 15px;
@@ -160,7 +150,6 @@ img {vertical-align: left;}
   background-color: #717171;
 }/*hover do indicador*/
 
-
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
@@ -174,4 +163,3 @@ img {vertical-align: left;}
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }/* diminui o tamanho do texto quanto menor a resolução */
-
