@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,37 +9,36 @@
     <link rel="stylesheet" type="text/css" href="css/variables.css"/>
     <link rel="stylesheet" type="text/css" href="css/footer.css"/>
     <link rel="stylesheet" type="text/css" href="css/navBar.css"/>
+    <link rel="stylesheet" type="text/css" href="css/contato.css"/>
     <title>Document</title>
 </head>
 <body>
     <navbar id="navBar"></navbar>
-    
-<div id="seila" class="content">
-    <form method="POST" action="https://formsubmit.co/gorillatch@gmail.com">
-    <div id="seila3">
-        <div class="seila2">
-            <label id="nome">Nome</label><br>
-            <input type="text" id="nome2" placeholder="Digite seu nome">     
-        </div>
-        <div class="seila2">
-            <label>E-mail</label><br>
-            <input type="email" id="email2" placeholder="Digite seu email">
-        </div>
-    </div>
-    
-    <br><br>
-    <label>Mensagem</label> <br><br>
-    <textarea id="msg" name="msg" rows="4" cols="100" placeholder="Deixe sua mensagem"></textarea>
-    <br><br>
-    <div id="botao1">
-    <button type="submit" name="enviar" id="botao">ENVIAR</button>
-    </div>
-    </form>
-</div>
 
-<footer id="footer"></footer>
-<script src="components/footer.js"></script>
-<script src="components/navBar.js"></script>
-    
+    <div class="content">
+        <h1>Contato</h1>
+        <form method="POST" action="https://formsubmit.co/gorillatch@gmail.com">
+            <div class="row">
+                <div>
+                    <label class="label-contato" id="nome">Nome</label>
+                    <input type="text" id="nome2" placeholder="Digite seu nome" required>     
+                </div>
+                <div>
+                    <label class="label-contato">E-mail</label>
+                    <input type="email" id="email2" placeholder="Digite seu email" required>
+                </div>
+            </div>
+            
+            <label class="label-contato">Mensagem</label>
+            <textarea id="msg" name="msg" rows="4" placeholder="Deixe sua mensagem..." required></textarea>
+
+            <button type="submit" name="enviar" class="botao">ENVIAR</button>
+            <button type="reset" name="limpar" class="botao limpar">LIMPAR</button>
+        </form>
+    </div>
+
+    <footer id="footer"></footer>
+    <script src="components/footer.js"></script>
+    <script src="components/navBar.js"></script>
 </body>
 </html>
