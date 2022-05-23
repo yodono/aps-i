@@ -25,6 +25,10 @@ h1 {
     padding-top: 25px;
 }
 
+a {
+  text-decoration: none;
+}
+
 .leftcolumn {   
   float: left;
   width: 75%;
