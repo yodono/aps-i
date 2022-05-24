@@ -2,6 +2,10 @@ body {
     font-weight: bold;
 }
 
+form {
+    padding: 1em;
+}
+
 .content {
     display: flex;
     flex-direction: column;
@@ -16,12 +20,17 @@ body {
 }
 
 .row {
-    display: grid;
-    grid-template-columns: auto auto;
+    display: inline-flex;
+    flex-wrap: wrap;
     gap: 1em;
 }
 
+.row > * {
+    flex: 1 1 0%;
+}
+
 input, textarea {
+    min-width: 20em;
     width: 100%;
     text-indent: 10px;
     padding: 1em;
@@ -33,7 +42,11 @@ input::placeholder, textarea::placeholder {
 }
 
 textarea {
-    resize: none
+    resize: none;
+}
+
+.message-container {
+    margin-right: 1em;
 }
 
 .botao{
@@ -65,5 +78,7 @@ label::after {
 
 .label-contato {
     display: block;
+    padding-top: 0.5em;
     padding-bottom: 0.25em;
 }
+

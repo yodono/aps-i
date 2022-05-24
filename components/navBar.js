@@ -52,7 +52,20 @@ function renderNavBar(){
             <div class="line3"></div>
         </div>
     </nav>
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+    </div>
     `
 };
 
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+
 renderNavBar();
+
