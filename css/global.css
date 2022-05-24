@@ -134,11 +134,13 @@ footer {
 }/* Texto */
 
 .numbertext {
-  color: #f2f2f2;
+  color: var(--light-grey);
+  background-color: var(--dark-grey-alpha50);
   font-size: 12px;
-  padding: 25px 15px;
+  padding: 1em;
+  top: 1.25em;
+  left: 0.5em;
   position: absolute;
-  top: 0;
 }/* Indicador em fração */
 
 .dot {
@@ -170,3 +172,13 @@ footer {
   .prev, .next,.text {font-size: 11px}
 }/* diminui o tamanho do texto quanto menor a resolução */
 
+.flow-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  color: var(--dark-grey);
+}
+
+.flow-link:hover {
+  color: var(--main-green);
+}
