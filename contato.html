@@ -10,6 +10,8 @@
     <meta name="author" content="Cabral, Belchior, Brito, Diniz, Masson e Yodono">
     <link rel="icon" href="./assets/common/logo.png" type="image/png">
 
+    <script src="https://kit.fontawesome.com/0eb20ecca7.js" crossorigin="anonymous"></script>
+
     <!-- css -->
     <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/variables.css" />
@@ -34,8 +36,10 @@
                 </div>
             </div>
             
-            <label class="label-contato">Mensagem</label>
-            <textarea id="msg" name="msg" rows="4" placeholder="Deixe sua mensagem..." required></textarea>
+            <div class="message-container">
+                <label class="label-contato">Mensagem</label>
+                <textarea id="msg" name="msg" rows="4" placeholder="Deixe sua mensagem..." required></textarea>
+            </div>
 
             <button type="submit" name="enviar" class="botao">ENVIAR</button>
             <button type="reset" name="limpar" class="botao limpar">LIMPAR</button>
@@ -45,5 +49,6 @@
     <footer id="footer"></footer>
     <script src="components/footer.js"></script>
     <script src="components/navBar.js"></script>
+    <script src="components/navSlide.js"></script>
 </body>
 </html>
