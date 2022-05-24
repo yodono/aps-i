@@ -21,6 +21,10 @@ nav, nav * {
     font-size: 22px;
 }
 
+.logo a {
+    color: var(--light-grey);
+}
+
 .nav_links{
     display: flex;
     height: 100%;

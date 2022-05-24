@@ -29,3 +29,6 @@ ul hr {
     margin-top: 0.25em;
 }
 
+.progress-bar {
+    background: var(--hydro-blue);
+}

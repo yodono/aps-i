@@ -2,12 +2,11 @@ function renderNavBar(){
     document.getElementById("navBar").innerHTML += /* html */`
     <nav>   
         <div class="logo">
-            <h4>ToMAN</h4>
+            <a href="../">
+                <h4>ToMAN</h4>
+            </a>
         </div>
         <ul class="nav_links">
-            <li>
-                <a href="../">Home</a>
-            </li>
             <li>
                 <a href="../sobre.html">Sobre</a>
             </li>
