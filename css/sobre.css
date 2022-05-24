@@ -56,10 +56,132 @@ body {
     margin-top: 20px;
 }
 
+.card .subtitle {
+    margin-top: 1em;
+    margin-bottom: 0.75em;
+}
+
+.card .chip {
+    background-color: var(--dark-grey);
+    color: var(--light-grey);
+    padding: 0.25em 0.75em;
+    border-radius: 15px;
+}
+
+.profile-card {
+    position: relative;
+}
+
+.profile-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.profile-cards-container > * {
+    flex: 1 1 0;
+}
+
+.profile-cards-container img {
+    width: 100%;
+    filter: grayscale(100%);
+    transition: all .5s;
+}
+
+.profile-cards-container img:hover {
+    filter: grayscale(0%);
+}
+
+.description {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: var(--dark-grey);
+}
+
+.profile-name{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.profile-card:hover .profile-name {
+    display: block;
+    pointer-events: none;
+    color: var(--main-green);
+    font-size: 1.15em;
+}
+
 .row:after {
     content: "";
     display: table;
     clear: both;
+}
+
+.project-button {
+    display: block;
+    margin-top: 20px;
+    width: 100%;
+    padding: 1em 0;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.project-button:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.project-button:active {
+    color: #000
+}
+
+.project-button:active:after {
+    background: transparent;
+}
+
+.project-button:hover:before {
+    opacity: 1;
+}
+
+.project-button:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
 }
 
 @media screen and (max-width: 800px) {
