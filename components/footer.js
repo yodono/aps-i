@@ -34,3 +34,4 @@ function renderFooter() {
 };
 
 renderFooter();
+

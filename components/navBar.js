@@ -68,3 +68,4 @@ function myFunction() {
 }
 
 renderNavBar();
+
