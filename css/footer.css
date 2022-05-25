@@ -1,0 +1,37 @@
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    color: var(--light-grey);
+    background-color: var(--dark-grey);
+    padding: 1.75em 5em;
+    gap: 1.75em;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer strong {
+    font-size: 1.25em;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--hydro-blue);
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: var(--light-grey);
+    text-decoration: underline;
+}
+
+footer > div:last-child {
+    display: flex;
+    justify-content: center;
+    flex: 1 1 100%;
+    font-weight: bold;
+}
+

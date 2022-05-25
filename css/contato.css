@@ -1,0 +1,84 @@
+body {
+    font-weight: bold;
+}
+
+form {
+    padding: 1em;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.content > h1 {
+    margin-bottom: 1em;
+    text-align: right;
+}
+
+.row {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.row > * {
+    flex: 1 1 0%;
+}
+
+input, textarea {
+    min-width: 20em;
+    width: 100%;
+    text-indent: 10px;
+    padding: 1em;
+    border: none;
+}
+
+input::placeholder, textarea::placeholder {
+    font-size: 1.15em;
+}
+
+textarea {
+    resize: none;
+}
+
+.message-container {
+    margin-right: 1em;
+}
+
+.botao{
+    background-color: var(--main-green);
+    border: none;
+    border-radius: 10px;
+    color: var(--dark-grey);
+    font-weight: bold;
+    padding: 1em 2em;
+    margin-top: 1em;
+}
+
+.botao:hover {
+    cursor: pointer;
+}
+
+.botao:active {
+    opacity: 0.7;
+}
+
+.botao.limpar {
+    background-color: var(--fire-red);
+}
+
+label::after {
+    content: " *";
+    color:red;
+}
+
+.label-contato {
+    display: block;
+    padding-top: 0.5em;
+    padding-bottom: 0.25em;
+}
+

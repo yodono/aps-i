@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--deep-gray);
+}
+
+.content {
+    margin-top: 10vh;
+    flex: 1 0 auto;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 25px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.leftcolumn {   
+  float: left;
+  width: 75%;
+  padding-left: 10px;
+  padding-bottom: 20px;
+}
+          
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 15px;
+  padding-right: 10px;
+  padding-bottom: 15px;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 1em;
+}
+
+.rightcolumn .card {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Layout responsivo, ao inves das colunas ficarem do lado da outra elas ficam alinhadas verticalmente, isso quando numa resolução menor que 400px*/
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+          
+/* Layout responsivo, ao inves das colunas ficarem do lado da outra elas ficam alinhadas verticalmente, isso quando numa resolução menor que 400px*/
+@media screen and (max-width: 400px) {
+   .topnav a {
+      float: none;
+      width: 100%;
+  }
+}
+/*Fim Colunas*/    
+
+footer {
+    flex-shrink: 0;
+}
+
+.slide {
+  display: none
+}
+
+.slideshow-container {
+  padding-top: 10px;
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.slideshow-container img{
+  height: 25em;
+}
+
+.ant, .pro {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}/* Proximo e antes - Botões */
+
+.pro {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}/* Posiciona o botão Proximo na direita */
+
+.ant:hover, .pro:hover {
+  background-color: rgba(0,0,0,0.8);
+}/* quando o mouse em cima a tonalidade do botão muda e possui um pouco de visibilidade doq está atras*/
+
+.text {
+  color: var(--deep-gray);
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0,0,0,0.5);
+}/* Texto */
+
+.numbertext {
+  color: var(--light-grey);
+  background-color: var(--dark-grey-alpha50);
+  font-size: 12px;
+  padding: 1em;
+  top: 1.25em;
+  left: 0.5em;
+  position: absolute;
+}/* Indicador em fração */
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}/* Indicador em dot */  
+
+.active, .dot:hover { 
+  background-color: #717171;
+}/*hover do indicador*/
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}/* animção de saida */
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}/* diminui o tamanho do texto quanto menor a resolução */
+
+.flow-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  color: var(--dark-grey);
+}
+
+.flow-link:hover {
+  color: var(--main-green);
+}

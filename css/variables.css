@@ -1,0 +1,20 @@
+:root {
+    /* color palette */
+    --main-green: #6CFF64;
+    --amazon-green: #8BF244;
+    --river-green: #4CE672;
+
+    --hydro-blue: #57FFAF;
+    --grass-yellow: #D5FF57;
+    --fire-red: #FF954A;
+
+    --light-grey: #CCCCCC;
+    --dark-grey: #141414;
+
+    --deep-gray: #F2F2F2;
+    --aa: #D6D6D6;
+    --bb: #A3A3A3;
+    --dark-grey-alpha90: #141414E6;
+    --dark-grey-alpha50: #14141480;
+}
+
