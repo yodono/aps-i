@@ -213,3 +213,14 @@ body {
     transition: opacity .3s ease-in-out;
     border-radius: 15px;
 }
+
+.values-chips-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+}
+
+.values-chips-container > * {
+    flex-grow: 1;
+    text-align: center;
+}
