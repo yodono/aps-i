@@ -2,13 +2,13 @@ function renderNavBar(){
     document.getElementById("navBar").innerHTML += /* html */`
     <nav>   
         <div class="logo">
-            <a href="../">
+            <a href="https://yodono-unip.github.io/aps-i/">
                 <h4>ToMAN</h4>
             </a>
         </div>
         <ul class="nav_links">
             <li>
-                <a href="../sobre.html">Sobre</a>
+                <a href="https://yodono-unip.github.io/aps-i/sobre.html">Sobre</a>
             </li>
             <li class="dropdown">
                 <p>
@@ -17,13 +17,13 @@ function renderNavBar(){
                 </p>
                 <ul class="dropdown-content">
                     <li>
-                        <a href="../amazonia.html">Amazônia</a>
+                        <a href="https://yodono-unip.github.io/aps-i/amazonia.html">Amazônia</a>
                     </li>
                     <li>
-                        <a href="../hidreletricas.html">Hidrelétricas</a>
+                        <a href="https://yodono-unip.github.io/aps-i/hidreletricas.html">Hidrelétricas</a>
                     </li>
                     <li>
-                        <a href="../pecuaria.html">Pecuária</a>
+                        <a href="https://yodono-unip.github.io/aps-i/pecuaria.html">Pecuária</a>
                     </li>
                 </ul>
             </li>
@@ -34,13 +34,13 @@ function renderNavBar(){
                 </p>
                 <ul class="dropdown-content">
                     <li>
-                        <a href="../eolica.html">Energia Eólica</a>
+                        <a href="https://yodono-unip.github.io/aps-i/eolica.html">Energia Eólica</a>
                     </li>
                     <li>
-                        <a href="../solar.html">Energia Solar</a>
+                        <a href="https://yodono-unip.github.io/aps-i/solar.html">Energia Solar</a>
                     </li>
                     <li>
-                        <a href="../maremotriz.html">Energia Maremotriz</a>
+                        <a href="https://yodono-unip.github.io/aps-i/maremotriz.html">Energia Maremotriz</a>
                     </li>
                 </ul>
             </li>

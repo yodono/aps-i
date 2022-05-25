@@ -3,8 +3,8 @@ function renderFooter() {
         <div>
             <strong>Social</strong>
             <ul>
-                <li><a href="contato.html">Contate-nos</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="https://yodono-unip.github.io/aps-i/contato.html">Contate-nos</a></li>
+                <li><a href="https://yodono-unip.github.io/aps-i/sobre.html">Sobre</a></li>
                 <li><a href="https://github.com/yodono-unip/aps-i" rel="noopener" target="_blank">Github</a></li>
             </ul>
         </div>
@@ -12,18 +12,18 @@ function renderFooter() {
         <div>
             <strong>Problemas</strong>
             <ul>
-                <li><a href="amazonia.html">Amazônia</a></li>
-                <li><a href="hidreletricas.html">Hidrelétricas</a></li>
-                <li><a href="pecuaria.html">Pecuária</a></li>
+                <li><a href="https://yodono-unip.github.io/aps-i/amazonia.html">Amazônia</a></li>
+                <li><a href="https://yodono-unip.github.io/aps-i/hidreletricas.html">Hidrelétricas</a></li>
+                <li><a href="https://yodono-unip.github.io/aps-i/pecuaria.html">Pecuária</a></li>
             </ul>
         </div>
 
         <div>
             <strong>Alternativas</strong>
             <ul>
-                <li><a href="eolica.html">Energia Eólica</a></li>
-                <li><a href="solar.html">Energia Solar</a></li>
-                <li><a href="maremotriz.html">Energia Maremotriz</a></li>
+                <li><a href="https://yodono-unip.github.io/aps-i/eolica.html">Energia Eólica</a></li>
+                <li><a href="https://yodono-unip.github.io/aps-i/solar.html">Energia Solar</a></li>
+                <li><a href="https://yodono-unip.github.io/aps-i/maremotriz.html">Energia Maremotriz</a></li>
             </ul>
         </div>
 
